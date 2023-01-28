@@ -23,6 +23,7 @@ def predict_api():
     output = regmodel.predict(transform_data)
     print(output[0])
     return jsonify(output[0])
+    
 
 @app.route('/predict', methods = ['POST'])
 def predict():
